@@ -1,1 +1,4 @@
+bin
+*.o
+*.pyc
 tmp/*

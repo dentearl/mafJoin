@@ -1,6 +1,8 @@
-include ../include.mk
-sonLibPath = ../../sonLib/lib
-binPath = ../bin
+include include.mk
+SHELL:=/bin/bash -e
+export SHELLOPTS=pipefail
+sonLibPath = ../sonLib/lib
+binPath = ./bin
 srcPath = ./src
 objPath = ./obj
 

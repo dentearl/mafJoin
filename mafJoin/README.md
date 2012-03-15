@@ -1,20 +1,20 @@
-#mafJoin
+# mafJoin
 
 **mafJoin** is a tool for combining pairs of [maf](http://genome.ucsc.edu/FAQ/FAQformat.html#format5) files that share a common sequence.
 
-##Authors
+## Authors
 [Mark Diekhans](https://github.com/diekhans/)
 
-##Dependencies
+## Dependencies
 * sonLib https://github.com/benedictpaten/sonLib/
-* kentSource <code>git clone git://genome-source.cse.ucsc.edu/kent.git</code>
+* The UCSC Kent source <code>git clone git://genome-source.cse.ucsc.edu/kent.git</code>
 
-##Installation
+## Installation
 1. Download the package. Consider making the parent of mafJoin a sibling directory to <code>sonLib</code>.
 2. <code>cd</code> into the directory.
 3. Type <code>make kentDir=/path/to/kent/src</code>.
 
-##Use
+## Use
 Try <code>mafJoin -help</code> for a usage statement.
 
 <code>mafJoin [optional -treelessRoot1="sequence name" -treelessRoot2="sequence name" ...] "common sequence" first.maf second.maf out.maf</code>
@@ -49,7 +49,7 @@ Note that in the second call to mafJoin we're only establishing the root (-treel
 
 Note that the final join does not have any -treelessRoot options since both incoming mafs are already tree-mafs.
 
-##Example
+## Example
 Two mafs are included in the example/ directory and can be joined using the command
 
 <code>$ mafJoin -treelessRoot1=C -treelessRoot2=C C example/AC.maf example/BC.maf ABC.maf</code>
